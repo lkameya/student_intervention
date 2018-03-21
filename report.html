@@ -12635,6 +12635,12 @@ Pontuação F1 para o conjunto de teste: 0.7947.
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Resposta: </strong></p>
 <p>O modelo escolhido irá predizer qual a situação de um determinado aluno na nossa escola. E a partir desse resultado conseguimos intervir na vida deste estudante de forma positiva, a fim de que obtenha as melhores instruções para garantir um melhor desempenho escolar. Como descobrimos se o aluno precisa ou não de intervenção? Nosso modelo chega a essa conclusão baseado nos dados anteriores de outros alunos. Averiguamos os principais fatores que podem influenciar no desempenho escolar de um estudante, tais fatores envolvem: idade, moradia, nível de educação, tempo de estudo, tempo livre, quantidade de faltas, situação dos pais, entre outros. A partir desses dados nosso algoritmo consegue traçar uma fronteira de decisão, indicando se devemos ou não intervir na vida de cada estudante. Podemos também escalonar facilmente a performance desse modelo, com novos dados que surgirão dos próximos estudantes, garantindo assim, uma maior acurácia em suas previsões.</p>
+<p>Como funciona o nosso modelo de Máquina de Vetores de Suporte (SVM) ?</p>
+<p>Basicamente a tarefa do nosso algoritmo é encontrar um hiperplano (uma linha ou um plano) que divide nosso conjunto de dados em duas classes: no nosso caso os alunos que precisam de intervenção e os que não precisam. Segue um exemplo na próxima imagem de um hiperplano dividindo duas classes: (podemos imaginar os pontos em verde como sendo os alunos que precisam de intervenção e em azul os alunos que não precisam de intervenção).</p>
+<p><img src="attachment:image.png" alt="image.png"></p>
+<p>Observamos que os vetores de suporte são os dados mais próximos do hiperplano, sendo pontos críticos para a solução do problema.</p>
+<p>Caso não exista uma linha que separe os dados, devemos enxergar o problema de outra maneira, aumentando a sua dimensão e encontrar um plano que divida os dados de maneira satisfatória.</p>
+<p>De forma resumida, o modelo é treinado com os dados dos estudantes, na qual estabelece um hiperplano que separa os dados, e faz uma estimativa baseado nessa fronteira de decisão, indicando em qual classe o novo aluno se encaixa.</p>
 
 </div>
 </div>
